@@ -1,43 +1,35 @@
-//package MyArrayList;
+//package MyStack;
 //
 //import java.util.Arrays;
 //
-//class Main extends MyArrayList1 {
+//public class MyStack<E> implements InterStack<E> {
 //    public static void main(String[] args) {
-//        MyArrayList1 temp = new MyArrayList1();
-//        temp.add(1); //0
-//        temp.add(5); //0
-//        temp.add(2); //0
-//        temp.add(3); //0
-//        temp.add(4); //0
-//        //temp.clear();
-//        System.out.println(temp.get(1));
-//        System.out.println(temp.size());
-//        System.out.println(temp.get(2));
-////        temp.remove(0);
-////        temp.remove(0);
-////        temp.remove(0);
-////        temp.remove(0);
-//        System.out.println(temp);
-//    }
-//}
-//public class MyArrayList1 implements MyList1<Object> {
-//    private int size;
-//    private Object[] array;
+//        MyStack<Integer> myStack = new MyStack<Integer>();
+//        myStack.push(3);
+//        myStack.push(4);
+//        myStack.push(5);
+//        myStack.push(6);
+//        myStack.push(7);
+//        myStack.push(8);
+//        myStack.pop();
+//        System.out.println(myStack);
 //
-//    public MyArrayList1() {
-//        size = 0;
-//        array = new Object[10];
+//    }
+//
+//    private int size;
+//    private Object[] array = new Object[10];
+//
+//    public MyStack() {
 //    }
 //
 //    @Override
-//    public void add(Object element) {
+//    public void push(Object value) {
 //        if (size == array.length) {
 //            Object[] newArray = new Object[array.length * 3 / 2 + 1];
 //            System.arraycopy(array, 0, newArray, 0, array.length);
 //            array = newArray;
 //        }
-//        array[size++] = element;
+//        array[size++] = value;
 //    }
 //
 //    @Override
@@ -63,8 +55,14 @@
 //    }
 //
 //    @Override
-//    public Object get(int index) {
-//        return array[index];
+//    public Object peek() {
+//        return array[size - 1];
+//    }
+//
+//    @Override
+//    public void pop() {
+//        System.out.println(array[size - 1]);
+//        remove(size - 1);
 //    }
 //
 //    @Override
@@ -75,4 +73,3 @@
 //        return Arrays.toString(array);
 //    }
 //}
-//

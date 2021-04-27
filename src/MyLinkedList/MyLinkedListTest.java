@@ -1,13 +1,10 @@
 //package MyLinkedList;
 //
-//import MyArrayList.MyList1;
-//
-//public class MyLinkedListTest<E> implements MyList1<E> {
+//public class MyLinkedListTest<E> implements MyList<E> {
 //    private Node<E> first;
 //    private Node<E> last;
 //    private int size;
-//    private int index;
-//    private int i;
+//
 //
 //    private static class Node<E> {
 //        E item;
@@ -23,7 +20,6 @@
 //
 //    public void add(E element) {
 //        size++;
-//        index = size - 1;
 //        Node<E> node2 = new Node<>(element);
 //        if (first == null) {
 //            first = last = node2;
@@ -52,19 +48,14 @@
 //        eNode.next = eNode.next.next;
 //        last = eNode;
 //        size--;
-//        int r = 0;
 //
 //    }
 //
 //    public void clear() {
-//        Node<E> dd = first;
-//        E result = first.item;
 //        for (int i = 0; i < size; i++) {
 //            if (i > 0) {
 //                this.first = this.last = null;
-//                dd = null;
 //                size = 0;
-//                index = 0;
 //            }
 //        }
 //    }
@@ -106,6 +97,7 @@
 //        item1.add(3);
 //        item1.add(4);
 //        item1.add(5);
+//        System.out.println(item1.get(0));
 //        System.out.println(item1);
 //        item1.remove(0);
 //        System.out.println(item1);

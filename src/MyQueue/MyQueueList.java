@@ -2,26 +2,25 @@
 //
 //import java.util.Arrays;
 //
-//public class MyQueueList<E> implements InterMyQueue<E>{
-//    public static <E>void main(String[] args) {
-//        MyQueueList<E>myQueueList = new MyQueueList<>();
-//myQueueList.add(1);
-//myQueueList.add(2);
-//myQueueList.add(3);
-//myQueueList.add(4);
-//myQueueList.add(5);
-//myQueueList.remove(0);
-//
-//System.out.println(myQueueList.size);
-//System.out.println(myQueueList);
-//
-//
-//
+//public class MyQueueList<E> implements InterMyQueue<E> {
+//    public static void main(String[] args) {
+//        MyQueueList<Integer> myQueueList = new MyQueueList<>();
+//        myQueueList.add(1);
+//        myQueueList.add(2);
+//        myQueueList.add(3);
+//        myQueueList.add(4);
+//        myQueueList.add(5);
+//        myQueueList.peek();
+//        myQueueList.poll();
+//        System.out.println(myQueueList.peek());
+//        System.out.println(myQueueList.size);
+//        System.out.println(myQueueList);
 //    }
+//
 //    private int size;
 //    private Object[] array;
 //
-//    public MyQueueList(){
+//    public MyQueueList() {
 //        size = 0;
 //        array = new Object[10];
 //
@@ -50,6 +49,7 @@
 //    public void clear() { // очищает список
 //        Object[] newArray = new Object[array.length - 1];
 //        System.arraycopy(newArray, 0, array, 0, newArray.length);
+//        array = newArray;
 //        size = 0;
 //    }
 //
@@ -59,18 +59,16 @@
 //    }
 //
 //    @Override
-//    public E peek() { // возвращает первый элемент
-//        return (E) array[0];
+//    public Object peek() { // возвращает первый элемент
+//        return array[0];
 //    }
 //
 //    @Override
 //    public void poll() {
-////        Object[] newArray = new Object[array.length - 1];
-////        System.arraycopy(array, 0, newArray, 0, index);
-////        System.arraycopy(array,  1, newArray, index, array.length - index - 1);
-////        array = newArray;
-////        size--;
+//        System.out.println(array[0]);
+//        remove(0);
 //    }
+//
 //    @Override
 //    public String toString() {
 //        Object[] newArray = new Object[size];
