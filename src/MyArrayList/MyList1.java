@@ -1,9 +1,9 @@
 package MyArrayList;
 
-public interface MyList1<T> {
-    void add(T element);
-    void remove(int index);
-    void clear();
-    int size();
-    T get(int index);
+public interface MyList1<E> {
+    void add(E element); //добавляет элемент в конец
+    void remove(int index); //удаляет элемент под индексом
+    void clear();           //очищает коллекцию
+    int size();             //возвращает размер коллекции
+    E get(int index);       //возвращает элемент под индексом
 }
