@@ -7,8 +7,7 @@ public class MyHashMap<E, T> implements InterHashMap<E, T> {
         myHashMap.put(456, "Dusia");
         myHashMap.put(789, "Kisa");
         myHashMap.put(369, "Limo");
-       // myHashMap.remove(123);
-        //   System.out.println(myHashMap.get(789));
+
         System.out.println(myHashMap);
 
     }
@@ -33,8 +32,21 @@ public class MyHashMap<E, T> implements InterHashMap<E, T> {
 
     @Override
     public void put(Object key, Object value) {
+
+        Node<E, T> eNode = first;
+        int i = 0;
+        while (eNode != null & i <= size) {
+            if (eNode.key.equals(key)) {
+                eNode.value = (T) value;
+                return;
+            }
+            i++;
+            eNode = eNode.next;
+
+        }
         size++;
-        Node<E, T> node1 = new Node<E, T>(key, value);
+        Node<E, T> node1 = new Node<>(key, value);
+
         if (first == null) {
             first = last = node1;
             node1.index = size - 1;
@@ -47,7 +59,7 @@ public class MyHashMap<E, T> implements InterHashMap<E, T> {
     }
 
     @Override
-    public void remove(Object key) {  // prev 123, noda 456, next 789
+    public void remove(Object key) {
         Node<E, T> eNode = first;
         int i = 0;
         while (i <= size) {
@@ -83,16 +95,20 @@ public class MyHashMap<E, T> implements InterHashMap<E, T> {
     }
 
     @Override
-    public Object get(Object key) {
+    public T get(Object key) {
         Node<E, T> result = first;
         StringBuilder rezult1 = new StringBuilder();
         while (result != null) {
             if (key.equals(result.key)) {
                 rezult1.append(result.value);
+                break;
             }
             result = result.next;
         }
-        return rezult1.toString();
+        if (result == null) {
+            return null;
+        }
+        return (T) rezult1.toString();
     }
 
     @Override
