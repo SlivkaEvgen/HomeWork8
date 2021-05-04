@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e00ecc4d-16a3-490e-9fc5-9ac3b0df5d89" name="clipboardPatchFile" comment="04/05/21">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="e00ecc4d-16a3-490e-9fc5-9ac3b0df5d89" name="clipboardPatchFile" comment="04/05/21/2" />
     <list id="574a5b68-f548-43b4-a15f-a7c4165daee4" name="Default Changelist" comment="ff" />
     <list id="ed265168-01a7-48f4-921e-845b884570f7" name="Uncommitted changes before rebase [Default Changelist]" comment="Uncommitted changes before rebase [Default Changelist]" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +120,11 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ShelveChangesManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -153,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620099950750</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="04/05/21">
+      <created>1620101083919</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620101083919</updated>
+    </task>
+    <task id="LOCAL-00005" summary="04/05/21/2">
+      <created>1620101382700</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620101382700</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +189,8 @@
     <MESSAGE value="ff" />
     <MESSAGE value="clipboardPatchFile" />
     <MESSAGE value="04/05/21" />
-    <option name="LAST_COMMIT_MESSAGE" value="04/05/21" />
+    <MESSAGE value="04/05/21/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="04/05/21/2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
